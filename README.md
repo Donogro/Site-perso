@@ -1,6 +1,5 @@
 # Site-perso
-Code site perso.
-Pour entretenir la technique
+Code site perso. Pour entretenir la technique.
 ________
 Done :
 
@@ -15,4 +14,5 @@ ________
 - Caroussel photos (pour page des lunchboxes) 
 - BDD pour stocker entrées perso
 - Formulaires pour saisie directe via l'admin du site
+- Tentative Drupal
 ________ 
