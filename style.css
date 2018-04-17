@@ -3,7 +3,7 @@
 body
 {
 	background-color: #f6f6f6;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: sans-serif;
 	color: #181818;
 }
 
@@ -16,7 +16,7 @@ body
 
 section h1, footer h1, nav a
 {
-	font-family: Dayrom, serif;
+	font-family: serif;
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -25,7 +25,7 @@ section h1, footer h1, nav a
 /* Header */
 header
 {
-	background: url('images/separateur.png') repeat-x bottom;
+	background: url('img/separateur.png') repeat-x bottom;
 }
 
 #titre_principal
@@ -35,7 +35,7 @@ header
 
 header h1
 {
-	font-family: 'BallparkWeiner', serif;
+	font-family: sans-serif;
 	font-size: 2.5em;
 	font-weight: normal;
 }
@@ -81,7 +81,6 @@ nav a:hover
 }
 
 
-
 /* Bannière */
 #banniere_image
 {
@@ -119,7 +118,6 @@ nav a:hover
 	position: absolute;
 	right: 5px;
 	bottom: 5px;
-/*	background: url('images/fond_degraderouge.png') repeat-x; /* on pourrait utiliser la propriété CSS3 linear-gradient */
 	background: linear-gradient(#e30007, #f93131);
 	border: 1px solid #760001;
 	border-radius: 5px;
@@ -128,11 +126,6 @@ nav a:hover
 	padding: 3px 8px 0px 8px;
 	color: white;
 	text-decoration: none;
-}
-
-.bouton_rouge img
-{
-	border: 0;
 }
 
 
@@ -180,7 +173,7 @@ aside
 	left: -12px;
 }
 
-#photo_zozor
+#photo_donogro
 {
 	text-align: center;
 }
@@ -199,7 +192,7 @@ aside img
 /* Footer */
 footer
 {
-	background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+	background: url('images/ico_top.png') no-repeat top center, url('img/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
 	padding-top: 25px;
 }
 
@@ -217,10 +210,6 @@ footer h1
 {
 	display: inline-block;
 	vertical-align: top;
-}
-
-#mes_photos
-{
 	width: 35%;
 }
 
