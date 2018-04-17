@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="carrousel_style.css" />
+		<title>Fatras, etc. - Donogro</title>
+	</head>
+	<body>
+		<div id="bloc_page">
+		<header>
+			<div id="titre_principal">
+				<img src="img/donogro_logo.png" alt="Logo de Donogro" id="logo" />
+				<h1>Fatras, etc.</h1>
+				<h2>Carnets de voyage</h2>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Entrées</a></li>
+					<li><a href="#">Bourdes</a></li>
+					<li><a href="#">Etc.</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="banniere_image">
+			<div id="banniere_description">
+				Miam miam, lunchboxes !
+				<a href="#" class="bouton_rouge">Accéder à la page</a>
+			</div>
+		</div>
+		<section>
+			<article>
+				<h1><img src="img/ico_etc.png" alt="Catégorie Foutaises" class="ico_categorie" />Carrousel</h1>
+				<p>Un carrousel de bouffe. Parce que why not?</p>
+
+				<div class="slideshow-container">
+
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 4</div>
+						<img src="img/photo1.jpg" alt="Photographie" style="width:100%">
+						<div class="text">Caption Text</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 4</div>
+						<img src="img/photo2.jpg" alt="Photographie" style="width:100%">
+						<div class="text">Caption Two</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 4</div>
+						<img src="img/photo3.jpg" alt="Photographie" style="width:100%">
+						<div class="text">Caption Three</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 4</div>
+						<img src="img/photo4.jpg" alt="Photographie" style="width:100%">
+						<div class="text">Caption Four</div>
+					</div>
+
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</article>
+
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {slideIndex = 1} 
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none"; 
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block"; 
+					dots[slideIndex-1].className += " active";
+				}
+			</script>
+
+
+		</section>
+		<footer>
+			<div id="mes_photos">
+				<h1>Mes photos</h1>
+				<p><img src="images/photo1.jpg" alt="Photographie" /><img src="images/photo2.jpg" alt="Photographie" /><img src="images/photo3.jpg" alt="Photographie" /><img src="images/photo4.jpg" alt="Photographie" /></p>
+			</div>
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>
