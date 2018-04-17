@@ -16,7 +16,7 @@ body
 
 section h1, footer h1, nav a
 {
-	font-family: serif;
+	font-family: sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -79,6 +79,7 @@ nav a:hover
 	color: #760001;
 	border-bottom: 3px solid #760001;
 }
+
 
 
 /* Bannière */
@@ -192,7 +193,7 @@ aside img
 /* Footer */
 footer
 {
-	background: url('images/ico_top.png') no-repeat top center, url('img/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+	background: url('img/ico_top.png') no-repeat top center, url('img/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
 	padding-top: 25px;
 }
 
