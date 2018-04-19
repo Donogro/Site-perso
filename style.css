@@ -209,7 +209,8 @@ footer h1
 
 #mes_photos
 {
-	display: inline-block;
+/*	display: inline-block; */
+	margin: auto;
 	vertical-align: top;
 	width: 35%;
 }
