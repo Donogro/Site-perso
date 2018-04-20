@@ -155,41 +155,6 @@ article p
 	font-size: 0.8em;
 }
 
-aside
-{
-	position: relative;
-	width: 235px;
-	background-color: #706b64;
-	box-shadow: 0px 2px 5px #1c1a19;
-	border-radius: 5px;
-	padding: 10px;
-	color: white;
-	font-size: 0.9em;
-}
-
-#fleche_bulle
-{
-	position: absolute;
-	top: 100px;
-	left: -12px;
-}
-
-#photo_donogro
-{
-	text-align: center;
-}
-
-#photo_donogro img
-{
-	border: 1px solid #181818;
-}
-
-aside img
-{
-	margin-right: 5px;
-}
-
-
 /* Footer */
 footer
 {
