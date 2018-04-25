@@ -1,0 +1,46 @@
+		/* Page en général */
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+}
+
+nav a{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+		/* Header */
+header{
+	background-color: #000000;
+}
+
+header a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#bandeau-entete {
+	color: white;
+}
+
+		/* Navigation */
+#navigation-site{
+	background-color:#404040;
+	color: light gray;
+	width: 100%;
+	display: inline-block;
+
+}
+
+nav ul{
+	margin:0;
+	list-style-type: none;
+}
+
+nav li{
+	display: inline-block;
+}
