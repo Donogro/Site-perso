@@ -13,7 +13,7 @@ nav a{
 	padding-bottom: 12px;
 }
 
-		/* Header */
+		/* Header & titre */
 header{
 	background-color: #000000;
 }
@@ -23,8 +23,19 @@ header a{
 	color: inherit;
 }
 
-#bandeau-entete {
+#bandeau-entete, #bandeau-entete h1 {
 	color: white;
+
+}
+
+
+	/* Header & titre - centrer*/
+#bandeau-entete h1, #bandeau-entete p {
+	width: 75%;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 		/* Navigation */
