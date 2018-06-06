@@ -1,33 +1,55 @@
+/* Div bloc-contenu & les div à l'intérieur */
+
+#bloc-contenu{
+	font-size: 1.5rem;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 4.6rem;
+	padding-right: 0px;
+	padding-bottom: 4.6rem;
+	padding-left: 0px;
+	overflow: hidden;
+	max-width: 960px;
+}
+
+#contenu-principal{
+	float: left;
+	width: 620px;
+	margin-top: 0px;
+	margin-right: 1rem;
+	margin-bottom: 0px;
+	margin-left: 1rem;
+}
+
+#contenu-principal h1{
+	font-size: 3rem;
+	color: #000;
+}
+
+#contenu-marge{
+	float: right;
+	margin-top: 0px;
+	margin-right: 1rem;
+	margin-bottom: 0px;
+	margin-left: 1rem;
+	width: 220px;
+}
+
+
 @media only screen and (max-width: 959px) and (min-width: 768px) {
 	#bloc-contenu{
-		width: 768px;
+		max-width: 768px;
 	}
 
 	#contenu-principal {
-		padding-right: 20px;
-		width: 556px;
+		padding-right: 2rem;
+		width: 515px;  /* Apparemment il faut gqrder +/- 19 px de battement pour que les sommes soient rondes. Peut-être la largeur de la barre de défilement ? */
 	}
 
 	#contenu-marge{
 		width: 172px
-	}
-}
-
-@media only screen and (max-width: 767px) and (min-width: 480px){
-	#bloc-contenu{
-		width: 420px;
-	}
-
-	#contenu-principal {
-		width: 420px;
-	}
-
-	#contenu-marge{
-		width: 300px;
-		margin-top: 0px;
-		margin-right: auto;
-		margin-bottom: 0px;
-		margin-left: auto;
 	}
 }
 
@@ -45,9 +67,6 @@
 		padding-top: : 4.6rem;
 		margin-left: auto;
 		padding-bottom: 4.6rem;
-
-
-
 		border-bottom-width: 1px;
 		border-bottom-style: solid;
 		border-bottom-color: rgba(0, 0, 0, 0.1);
@@ -62,49 +81,20 @@
 	}
 }
 
-#bloc-contenu{
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 0px;
-	margin-left: auto;
-	padding-top: 4.6rem;
-	padding-right: 0px;
-	padding-bottom: 4.6rem;
-	padding-left: 0px;
-	overflow: hidden;
-	max-width: 960px;
-	width: 100%;
-}
+@media only screen and (max-width: 767px) and (min-width: 480px){
+	#bloc-contenu{
+		width: 420px;
+	}
 
-#contenu-principal{
-	font-size: 1.5rem;
-	float: left;
-	max-width: 620px;
-	margin-top: 0px;
-	margin-right: 1rem;
-	margin-bottom: 0px;
-	margin-left: 1rem;
+	#contenu-principal {
+		width: 420px;
+	}
 
-
-	border-width: 1px;
-	border-style: solid;
-	border-color: rgba(255, 1, 1, 1);
-}
-
-#contenu-principal h1{
-	font-size: 3rem;
-	color: #000;
-}
-
-#contenu-marge{
-	float: right;
-	margin-top: 0px;
-	margin-right: 1rem;
-	margin-bottom: 0px;
-	margin-left: 1rem;
-	max-width: 220px;
-
-	border-width: 1px;
-	border-style: solid;
-	border-color: rgba(1, 255, 1, 1);
+	#contenu-marge{
+		width: 420px;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-bottom: 0px;
+		margin-left: auto;
+	}
 }
