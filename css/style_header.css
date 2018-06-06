@@ -4,6 +4,10 @@ font-family: 'Lato-font';
 src: url('fonts/lato/lato-light.ttf');
 }
 
+html {
+    font-size: 62.5%; /* Ré-équilibrage du Rem face au Pixel pour des calculs simples */
+}
+
 body {
 	font-family: "Lato-font","Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 
@@ -40,13 +44,13 @@ header a{
 }
 
 #bandeau-entete h1 {
-	font-size: 3rem;
+	font-size: 8rem;
 	padding-top: 20px;
 }
 
 #bandeau-entete p {
 	color: #666;
-	font-size: 1.5rem;
+	font-size: 2.3rem;
 	font-variant: small-caps;
 }
 
@@ -55,10 +59,12 @@ header a{
 #barre-menu{
 	background-color:#404040;
     margin: 0px;
-    padding-bottom: 5px;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
 }
 
 #barre-menu-centrer{
+	font-size: 1.5rem;
 	width: 75%;
     margin-right: auto;
     margin-left: auto;
@@ -66,6 +72,7 @@ header a{
 
 #navigation-site{
 	color: #ccc;
+	font-variant: small-caps;
 }
 
 	/* Barre de nav - liens */
