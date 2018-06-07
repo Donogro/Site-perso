@@ -1,6 +1,11 @@
-		/* Page en général */
+	/* Page en général */
 @font-face {
-font-family: 'Lato-font';
+font-family: 'Lato-regular';
+src: url('fonts/lato/lato-regular.ttf');
+}
+
+@font-face {
+font-family: 'Lato-light';
 src: url('fonts/lato/lato-light.ttf');
 }
 
@@ -9,79 +14,105 @@ html {
 }
 
 body {
-	font-family: "Lato-font","Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-family: "Lato-regular","Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 	color: #666666;
 	margin: 0;
 	padding: 0;
 }
 
-nav a{
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-}
-
-		/* Header & titre - couleurs */
+		/* Header - Titre & Sous-titres */
 header{
 	background-color: #000000;
 }
 
-header a{
+.titre-site{
+
+	display: block;
 	text-decoration: none;
 	color: inherit;
-}
 
-#bandeau-entete, #bandeau-entete h1, #bandeau-entete p{
 	color: white;
-	width: 75%;
+	width: 960px;
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 
-#bandeau-entete h1 {
+.titre-site h1{
+	font-family: "Lato-light";
 	font-size: 8rem;
-	padding-top: 20px;
+	margin: 0;
+	padding-top: 4rem;
+	padding-bottom: 0.5rem;
 }
 
-#bandeau-entete p {
+.titre-site p{
 	color: #666;
-	font-size: 2.3rem;
-	font-variant: small-caps;
+	font-size: 2rem;
+	margin: 0;
+	padding-bottom: 2.3rem;
 }
 
-		/* Barre de nav */
+@media only screen and (max-width: 959px) and (min-width: 768px){
+	.titre-site{
+		width: 768px;
+	}
+}
 
-#barre-menu{
+@media only screen and (max-width: 767px){
+	.titre-site{
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+	}
+
+	.titre-site h1{
+		font-size: 4rem;
+		padding-top: 6rem;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+	.titre-site{
+		width: 420px;
+	}
+}
+
+#barre-nav{
 	background-color:#404040;
-    margin: 0px;
-	padding-top: 1.2rem;
-	padding-bottom: 1.2rem;
-}
-
-#barre-menu-centrer{
-	font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
+}
+
+#nav-site{
+	clear: both;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
 	max-width: 960px;
-	width: 75%;
+	min-height: 36px;
+	position: relative;
 }
 
-#navigation-site{
-	color: #ccc;
-	font-variant: small-caps;
+nav h4{
+	font-size: 1.5rem;
 }
 
-	/* Barre de nav - liens */
-nav ul{
-	margin: 0;
-    padding: 0;
+#nav-menu ul{
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 4rem;
 	list-style-type: none;
 }
 
-nav li{
-	display: inline-block;
+#nav-menu li{
+	display: list-item;
 }
